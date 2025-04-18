@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Saavari - Book Your Ride</title>
+  <title>gopayana - Book Your Ride</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
@@ -72,7 +72,7 @@
 <body>
 
 <header>
-  <h1>Saavari 🚗</h1>
+  <h1>gopayana 🚗</h1>
   <p>Your Smart Ride Partner</p>
 </header>
 
@@ -102,7 +102,7 @@
 </div>
 
 <footer>
-  &copy; 2025 Saavari - Made for Easy Travel
+  &copy; 2025 gopayana- Made for Easy Travel
 </footer>
 
 </body>
