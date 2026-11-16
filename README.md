@@ -1,109 +1,39 @@
-# website
+# GoPaYaNa — Ride Booking UI
 
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>gopayana - Book Your Ride</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f8fafc;
-      color: #1f2937;
-    }
-    header {
-      background-color: #0f172a;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-    .container {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    .booking-form {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
-    .booking-form h2 {
-      margin-bottom: 20px;
-      color: #0f172a;
-    }
-    label {
-      display: block;
-      margin: 10px 0 5px;
-    }
-    input, select, button {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #cbd5e1;
-      border-radius: 8px;
-    }
-    button {
-      background-color: #0ea5e9;
-      color: white;
-      font-weight: 600;
-      border: none;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #0284c7;
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      background-color: #0f172a;
-      color: white;
-      margin-top: 40px;
-    }
-  </style>
-</head>
-<body>
+A static front-end concept for a ride-booking experience. The page presents pickup and drop-off fields, ride-type selection, and a pickup-time input.
 
-<header>
-  <h1>gopayana 🚗</h1>
-  <p>Your Smart Ride Partner</p>
-</header>
+## Preview
 
-<div class="container">
-  <div class="booking-form">
-    <h2>Book a Ride</h2>
-    <form>
-      <label for="pickup">Pickup Location</label>
-      <input type="text" id="pickup" placeholder="Enter pickup point" required />
+The HTML source is available in [`index.html`](index.html).
 
-      <label for="drop">Drop Location</label>
-      <input type="text" id="drop" placeholder="Enter drop point" required />
+## Current Scope
 
-      <label for="ride-type">Select Ride Type</label>
-      <select id="ride-type">
-        <option value="auto">Auto</option>
-        <option value="mini">Mini</option>
-        <option value="prime">Prime</option>
-      </select>
+The page is a user-interface prototype. A working ride-booking service would additionally require a backend, authentication, fare calculation, driver dispatch, booking persistence, location services, and payment integration. The current form should not be represented as a live booking or dispatch system unless those services are connected.
 
-      <label for="time">Pickup Time</label>
-      <input type="time" id="time" />
+## Technology
 
-      <button type="submit">Confirm Ride</button>
-    </form>
-  </div>
-</div>
+- HTML5
+- CSS3
+- Google Fonts (Inter)
 
-<footer>
-  &copy; 2025 gopayana- Made for Easy Travel
-</footer>
+## Run Locally
 
-</body>
-</html>
+```bash
+git clone https://github.com/dar2006sh8an13/website.git
+cd website
+python -m http.server 8000
+```
+
+Open [http://localhost:8000](http://localhost:8000).
+
+## Development Roadmap
+
+- Add client-side validation and accessible form feedback.
+- Connect a documented backend API.
+- Add secure booking persistence and user authentication.
+- Integrate verified fare and route information.
+- Add privacy and security reviews before collecting user data.
+
+## License
+
+No license is currently documented.
